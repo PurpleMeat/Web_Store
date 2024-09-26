@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "View";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Аптека</title>
+    <link href="~/css/NewStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="header">
+        <p>Аптека</p>
+        <button class="butLog">Войти</button>
+        </div>
+    <div id="wrapper">   
+   
+        <div class="container">
+                
+                    <ul class="tree">
+                        <li>
+                            <details>
+                                <summary>Мягкие</summary>
+                                <ul class="ul2">
+                                    <li><a asp-area="" asp-controller="Tovars" asp-action="ViewView">Мази</a></li>
+                                    <li>Гели</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Твердые</summary>
+                            <ul class="ul2">
+                                    <li>Таблетки</li>
+                                    <li>Гранулы</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Жидкие</summary>
+                            <ul class="ul2">
+                                    <li>Капли</li>
+                                    <li>Сиропы</li>
+                                </ul>
+                            </details>
+                        </li>
+
+                    </ul>
+              
+            
+            
+        </div>
+
+        <div id="main">
+            @RenderBody()
+        </div>
+        
+    </div>
+  
+    
+    <div id="footer">Футер</div>
+    
+</body>
+</html>

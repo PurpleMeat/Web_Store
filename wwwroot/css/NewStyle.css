@@ -1,0 +1,88 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd,
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    position: page;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    background-color: #ccc;
+}
+
+#main {
+    background-color: #ccc;
+    height: 200px;
+    margin-left: 200px; /* 150px (ширина сайдбара) + 10px + 10px (2 отступа) */
+    padding-left: 10px;
+    display: flex;
+    width: fit-content;
+    
+}
+div {
+    margin: 0px;
+    padding-left: 0;
+}
+
+#header {
+    background-color: dimgray;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    font-size: 45px;
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+#footer {
+    background-color: dimgray;
+    border-top: 1px solid #ccc;   
+    width: 100%;
+    white-space: nowrap;
+    display:flex;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ccc;
+    float: left;
+    width: 200px;
+    min-height:306px;
+    height: fit-content;
+    font-size: 30px;
+    border-right: 2px solid dimgray;
+}
+.ul2 {
+    padding-left: 15px;
+    list-style-type: none;
+}
+ul {
+    margin-left: 10px;
+}
+.wrapper {
+    width: fit-content;
+}
+.butLog {
+    display: block;
+    height: 40px;
+    width: 70px;
+
+    position: absolute; /* или position:fixed */
+    top: 0;
+    right: 0;
+    margin: 15px 10px 0px 0px;
+    background-color: #ccc;
+    
+}
+
