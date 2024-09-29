@@ -7,11 +7,39 @@
     <meta charset="utf-8">
     <title>Аптека</title>
     <link href="~/css/NewStyle.css" rel="stylesheet" type="text/css" />
+    <style>
+        a:link {
+            color: blue;
+            text-decoration: none
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: royalblue;   
+            font-weight:bold;  
+            font:24px;
+        }
+
+        a:active {
+            color: yellow;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div id="header">
-        <p>Аптека</p>
+        <p style="color:white">Интернет-магазин</p>        
         <button class="butLog">Войти</button>
+        <div class="searchInput">
+            <form>
+                <input class="search" />
+            </form>
+        </div>
+       
         </div>
     <div id="wrapper">   
    
@@ -20,34 +48,34 @@
                     <ul class="tree">
                         <li>
                             <details>
-                                <summary>Мягкие</summary>
+                                <summary>Молочные и кисломолочные продукты</summary>
                                 <ul class="ul2">
-                                    <li><a asp-area="" asp-controller="Tovars" asp-action="ViewView">Мази</a></li>
-                                    <li>Гели</li>
+                                    <li><a asp-area="" asp-controller="Tovars" asp-action="ViewView">Молоко</a></li>
+                                    <li>Творог</li>
                                 </ul>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary>Твердые</summary>
+                                <summary>Мясо</summary>
                             <ul class="ul2">
-                                    <li>Таблетки</li>
-                                    <li>Гранулы</li>
+                                    <li>Мясо убойных животных</li>
+                                    <li>Мясо диких животных</li>                            
                                 </ul>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary>Жидкие</summary>
+                                <summary>Напитки</summary>
                             <ul class="ul2">
-                                    <li>Капли</li>
-                                    <li>Сиропы</li>
+                                    <li>Безалкогольные напитки</li>
+                                    <li>Алкоголь</li>
+                                    <li>Соки</li>
                                 </ul>
                             </details>
                         </li>
 
-                    </ul>
-              
+                    </ul>            
             
             
         </div>

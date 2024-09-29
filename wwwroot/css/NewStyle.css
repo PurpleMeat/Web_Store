@@ -18,11 +18,11 @@ html {
 
 body {
     font-size: 18px;
-    background-color: #ccc;
+    background-color: white;
 }
 
 #main {
-    background-color: #ccc;
+    background-color: white;
     height: 200px;
     margin-left: 200px; /* 150px (ширина сайдбара) + 10px + 10px (2 отступа) */
     padding-left: 10px;
@@ -36,38 +36,50 @@ div {
 }
 
 #header {
-    background-color: dimgray;
-    border-bottom: 1px solid #ccc;
-    height: 80px;
+    background-color: steelblue;
+    
+    height: 100px;
     font-size: 45px;
     text-align: left;
     padding-left: 10px;
-    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;    
 }
 
 #footer {
-    background-color: dimgray;
+    background-color: steelblue;
     border-top: 1px solid #ccc;   
     width: 100%;
     white-space: nowrap;
     display:flex;
+    
 }
 .container {
     display: flex;
     flex-direction: row;
-    background-color: #ccc;
+    background-color: white;
     float: left;
-    width: 200px;
-    min-height:306px;
+    max-width: 250px;
+    width: stretch;
+    min-height: 306px;
     height: fit-content;
-    font-size: 30px;
-    border-right: 2px solid dimgray;
+    font-size: 25px;
+    padding: 5px;
+    border-right: 2px solid steelblue;
+    
+}
+details[open] > summary {
+    text-decoration: underline;
 }
 .ul2 {
     padding-left: 15px;
     list-style-type: none;
+    font-size:22px; 
+    display:block;    
+    
 }
-ul {
+.tree {
+    list-style-type: none;
     margin-left: 10px;
 }
 .wrapper {
@@ -83,6 +95,24 @@ ul {
     right: 0;
     margin: 15px 10px 0px 0px;
     background-color: #ccc;
+
+    border-radius:15px;
     
 }
+.search {
+    width: 600px;
+    height: 25px;
+    margin-top: 15px;
+    border-radius:15px;
+    border-style:none;
+}
+.searchInput {
+    position: absolute; /* или position:fixed */
+    top: 40px;
+    left: 300px;
+
+    
+}
+
+
 
